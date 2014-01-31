@@ -1,3 +1,6 @@
+#content{
+	
+}
 #certificado_paypal img{
 	margin-left: 50px;
 }
@@ -12,4 +15,14 @@
 }
 #boleto p{
 	margin-left: 25px;
+}
+#descricao_produto img{
+	float: right;
+}
+#comprar_normal input{
+	width: 212px;
+	height: 30px;
+	border-radius: 10px;
+	margin-left: 100px;
+	margin-top: 5px;
 }

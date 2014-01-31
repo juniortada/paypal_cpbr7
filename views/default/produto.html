@@ -1,2 +1,34 @@
 {{extend 'layout.html'}}
+
 {{=message}}
+
+<div id="descricao_produto">
+	<form id="produto_form">
+		<h3>Nome</h3>
+		<p>Notebook</p>
+		<img src="https://s3-sa-east-1.amazonaws.com/hackthon-cpbr7/images/notebook.jpg" border="0" alt="Imagens de solução">
+		<h3>Descrição</h3>
+		<p>Notebook LG A520 Intel i3 4gb HD 500gb</p>
+		<h3>Quantidade</h3>
+		<p>2</p>
+		<h3>Valor Unitário</h3>
+		<p>R$ 1200,00</p>
+		<h3>Total</h3>
+		<p>R$ 2400,00</p>
+
+	<div id="botao_comprar">
+		
+		<div id="comprar_normal">
+			<input type="submit" value="Comprar">
+		
+			<a href={{=URL(request.application, c='default', f='pagamento')}}>
+				<!-- PayPal Logo -->
+				<img  src="https://www.paypal-brasil.com.br/logocenter/util/img/botao-checkout_horizontal_paguecom_as.png" border="0" alt="Imagens de solução" />
+				<!-- PayPal Logo -->
+			</a>
+		</div>
+
+	</div>
+	</form>
+
+</div>

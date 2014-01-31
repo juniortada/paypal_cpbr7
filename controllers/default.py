@@ -20,6 +20,9 @@ def index():
     """
     return dict(message=T('Hello World'))
 
+def sobre():
+    return dict(message=T('Junior Tada e Leonardo Tada'))
+
 def produtos():
     return dict(message=T('Teste Produtos'))
 
