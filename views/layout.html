@@ -18,6 +18,7 @@ Released   : 20080122
   </title>
   {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Tastelessly/style.css'))}}
   {{response.files.append(URL('static','plugin_layouts/superfish.js'))}}
+  {{response.files.append(URL('static','css/site_style.css'))}}
   {{include 'web2py_ajax.html'}}
   <style>
 ul.web2py-menu-vertical { width: 150px; position: relative; top:1em; left:1em;  z-index:30; border:0; margin:0; padding: 0; list-style: none; text-decoration: none;}
@@ -53,10 +54,10 @@ div.error { background-color: red; color: white; padding: 3px; }
   </div>
   <div id="logo">
    <h1>
-    {{=response.title or request.application}}
+    Loja Hackthon PayPal #CPBR7
    </h1>
    <h2>
-    {{=response.subtitle or '=response.subtitle'}}
+    Hackthon PayPal #CPBR7
    </h2>
   </div>
   <!-- end header -->
@@ -69,58 +70,6 @@ div.error { background-color: red; color: white; padding: 3px; }
     {{include}}
    </div>
    <!-- end content -->
-   <!-- start sidebar one -->
-   <div id="sidebar1" class="sidebar">
-    <ul>
-     <li id="recent-posts">
-      <h2>
-       Recent Posts
-      </h2>
-      <ul>
-       <li>
-        <h3>
-         <a href="#">
-          Aliquam Libero
-         </a>
-        </h3>
-        <p>
-         Nullam ante orci, eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo. Pellentesque imperdiet.
-         <a href="#">
-          More&hellip;
-         </a>
-        </p>
-       </li>
-       <li>
-        <h3>
-         <a href="#">
-          Semper Vestibulum
-         </a>
-        </h3>
-        <p>
-         Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh.
-         <a href="#">
-          More&hellip;
-         </a>
-        </p>
-       </li>
-       <li>
-        <h3>
-         <a href="#">
-          Etiam Malesuada
-         </a>
-        </h3>
-        <p>
-         Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Duis enim nulla, luctus eu, dapibus lacinia, venenatis id, quam. Vestibulum imperdiet, magna nec eleifend rutrum, nunc lectus vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.
-         <a href="#">
-          More&hellip;
-         </a>
-        </p>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </div>
-   <!-- end sidebar one -->
    <!-- start sidebar two -->
    <div id="sidebar2" class="sidebar">
     <ul>
@@ -163,77 +112,34 @@ div.error { background-color: red; color: white; padding: 3px; }
      </li>
      <li>
       <h2>
-       Archives
+       Formas de Pagamento
       </h2>
-      <ul>
-       <li>
-        <a href="#">
-         September
-        </a>
-        (23)
-       </li>
-       <li>
-        <a href="#">
-         August
-        </a>
-        (31)
-       </li>
-       <li>
-        <a href="#">
-         July
-        </a>
-        (31)
-       </li>
-       <li>
-        <a href="#">
-         June
-        </a>
-        (30)
-       </li>
-       <li>
-        <a href="#">
-         May
-        </a>
-        (31)
-       </li>
-      </ul>
+        <div id="pagamentos">
+          <div id="pagamento_paypal">
+            <p>PayPal</p>
+            <!-- PayPal Logo -->
+            <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr>
+              <tr><td align="center"><a href="#" onclick="javascript:window.open('https://www.paypal.com/br/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=350');"><img  src="https://www.paypal-brasil.com.br/logocenter/util/img/banners/seloPayPal.jpg" border="0" alt="Imagens de solução"></a></td></tr>
+            </table>
+            <!-- PayPal Logo -->
+          </div>
+          <div id="boleto">
+            <p>Boleto</p>
+            <!-- Boleto Logo -->
+            <img  src="https://s3-sa-east-1.amazonaws.com/hackthon-cpbr7/images/boleto.jpg" border="0" alt="Imagens de solução" />
+            <!-- Boleto Logo -->  
+          </div>
+        </div>
      </li>
      <li>
       <h2>
-       Lorem ipsum dolor
+       Certificados de Segurança
       </h2>
-      <ul>
-       <li>
-        <a href="#">
-         Aliquam libero
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Consectetuer elit
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Metus pellentesque
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Suspendisse mauris
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Urnanet molestie semper
-        </a>
-       </li>
-       <li>
-        <a href="#">
-         Proin orci porttitor
-        </a>
-       </li>
-      </ul>
+        <div id="certificado_paypal">
+          <!-- PayPal Lhttps://s3-sa-east-1.amazonaws.com/hackthon-cpbr7/images/boleto.jpgogo -->
+          <img  src="https://www.paypal-brasil.com.br/logocenter/util/img/compra_segura_horizontal.png" border="0" alt="Imagens de solução" />
+          <!-- PayPal Logo -->
+        </div>  
      </li>
     </ul>
    </div>
