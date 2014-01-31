@@ -21,7 +21,7 @@ def index():
     return dict(message=T('Hello World'))
 
 def sobre():
-    return dict(message=T('Junior Tada e Leonardo Tada'))
+    return dict()
 
 def produtos():
     return dict(message=T('Teste Produtos'))
@@ -31,6 +31,13 @@ def produto():
 
 def pagamento():
     return dict(message=T('Teste Pagamento'))
+
+def sucesso():
+    msg = request.vars
+    return dict(msg=msg)
+
+def recusado():
+    return dict(message=T('Recusado: Exibir motivo'))
 
 def user():
     """
