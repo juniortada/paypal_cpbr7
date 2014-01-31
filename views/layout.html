@@ -36,9 +36,9 @@ div.error { background-color: red; color: white; padding: 3px; }
   <!-- start header -->
   <div id="header">
    <div id="menu">
-    <a href="">Home</a>
-    <a href="">Produtos</a>
-    <a href="">Formas de Pagamento</a>
+    <a href={{=URL(request.application, c='default', f='index')}}>Home</a>
+    <a href={{=URL(request.application, c='default', f='produtos')}}>Produtos</a>
+    <a href={{=URL(request.application, c='default', f='pagamento')}}>Formas de Pagamento</a>
     <script>
       jQuery(document).ready(function(){jQuery('ul.web2py-menu').superfish({delay:400});});
     </script>
@@ -80,7 +80,7 @@ div.error { background-color: red; color: white; padding: 3px; }
       <ul>
        <li>
         <a href="#">
-         Aliquam libero
+         Notebook LG A520 c/ Intel i3 4gb HD 500gb R$ 1200,00
         </a>
        </li>
        <li>
