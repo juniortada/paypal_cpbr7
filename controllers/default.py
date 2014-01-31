@@ -20,6 +20,14 @@ def index():
     """
     return dict(message=T('Hello World'))
 
+def produtos():
+    return dict(message=T('Teste Produtos'))
+
+def produto():
+    return dict(message=T('Pagina do Produto'))
+
+def pagamento():
+    return dict(message=T('Teste Pagamento'))
 
 def user():
     """

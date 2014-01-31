@@ -339,12 +339,8 @@ hr {
 	margin: 0 0 1em 0;
 }
 
-#sidebar1 {
-	width: 230px;
-	padding: 0px 0px 0px 20px;
-}
-
 #sidebar2 {
+	float: right;
 	width: 240px;
 	padding: 0px 20px 0px 20px;
 }
