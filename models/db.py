@@ -71,3 +71,6 @@ use_janrain(auth, filename='private/janrain.key')
 
 ## after defining tables, uncomment below to enable auditing
 # auth.enable_record_versioning(db)
+
+# we also make a session cart, just in case
+session.cart = session.cart or {"itens":[]}

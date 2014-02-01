@@ -3,7 +3,7 @@
 {{=message}}
 
 <div id="descricao_produto">
-	<form id="produto_form">
+	<form id="produto_form" method="post" action={{=URL(request.application, c='default', f='add_cart', vars={'nome':'notebook', 'descricao':'Notebook LG A520 Intel i3 4gb HD 500gb', 'preco':'1200.00'})}}>
 		<h3>Nome</h3>
 		<p>Notebook</p>
 		<img src="https://s3-sa-east-1.amazonaws.com/hackthon-cpbr7/images/notebook.jpg" border="0" alt="Imagens de solução">

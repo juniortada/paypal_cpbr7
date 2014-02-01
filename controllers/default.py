@@ -24,7 +24,11 @@ def sobre():
     return dict()
 
 def carrinho():
-    return dict(message=T('Teste carrinho de compras'))
+    itens = session.cart['itens']
+    if len(itens) > 0:
+        return dict(itens=itens)
+    else:
+        return dict(H2('Carrinho Vazio!'))    
 
 def produtos():
     return dict(message=T('Teste Produtos'))
@@ -36,6 +40,10 @@ def pagamento():
     import os
 
     print os.getcwd()
+
+def add_cart():
+    session.cart['itens'].append(request.vars)
+    redirect(URL('carrinho'))
 
 def sucesso():
     msg = request.vars

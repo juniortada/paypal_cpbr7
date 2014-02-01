@@ -24,17 +24,21 @@
 }
 #comprar_normal input{
 	width: 212px;
-	height: 30px;
+	height: 25px;
 	border-radius: 10px;
 	margin-left: 100px;
 	margin-top: 5px;
 }
 #finalizar_compra{
-	margin-top: 50px;
+	
+}
+#finalizar_compra a{
+	float: right;
 }
 #finalizar_compra input{
 	width: 212px;
 	height: 30px;
 	border-radius: 10px;
 	margin-left: 100px;
+	margin-top: 8px;
 }
