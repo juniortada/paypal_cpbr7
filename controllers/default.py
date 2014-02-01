@@ -23,14 +23,19 @@ def index():
 def sobre():
     return dict()
 
+def carrinho():
+    return dict(message=T('Teste carrinho de compras'))
+
 def produtos():
     return dict(message=T('Teste Produtos'))
 
 def produto():
-    return dict(message=T('Pagina do Produto'))
+    return dict(message=T('Informações Sobre o Produto'))
 
 def pagamento():
-    return dict(message=T('Teste Pagamento'))
+    import os
+
+    print os.getcwd()
 
 def sucesso():
     msg = request.vars

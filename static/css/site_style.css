@@ -19,10 +19,22 @@
 #descricao_produto img{
 	float: right;
 }
+#comprar_normal{
+	margin-top: 200px;
+}
 #comprar_normal input{
 	width: 212px;
 	height: 30px;
 	border-radius: 10px;
 	margin-left: 100px;
 	margin-top: 5px;
+}
+#finalizar_compra{
+	margin-top: 50px;
+}
+#finalizar_compra input{
+	width: 212px;
+	height: 30px;
+	border-radius: 10px;
+	margin-left: 100px;
 }

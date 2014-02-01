@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+
+{{=message}}
+
+<div id="carrinho">
+	
+	<form id="carrinho_fomr">
+
+		<h3>Descrição</h3>
+		<p>Notebook LG A520 Intel i3 4gb HD 500gb</p>
+		<h3>Preço</h3>
+		<p>R$ 1200,00</p>
+		<h3>Qtde</h3>
+		<input id="quantidade" value="1" type="text" >
+		<h3>Total</h3>
+		<p>R$ 1200,00</p>
+
+		<div id="finalizar_compra">
+			<input type="submit" value="Comprar com Boleto"/>
+		
+			<a href={{=URL(request.application, c='default', f='pagamento')}}>
+				<!-- PayPal Logo -->
+				<img  src="https://www.paypal-brasil.com.br/logocenter/util/img/botao-checkout_horizontal_paguecom_as.png" border="0" alt="Imagens de solução" />
+				<!-- PayPal Logo -->
+			</a>
+	</div>
+		
+	</form>
+	<h3>Frete Grátis</h3>
+
+</div>
